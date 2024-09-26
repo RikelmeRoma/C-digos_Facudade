@@ -1,0 +1,109 @@
+package oii;
+
+public class Lista {
+    private No primeiro;
+
+    //construtor
+
+    public Lista() {
+        primeiro = null;
+
+    }
+
+    //get
+
+    public No getPrimeiro() {
+        return primeiro;
+    }
+
+    // buscar valor
+    public boolean estaVazia() {
+        if (primeiro == null) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    // insere primeiro;
+
+    public void inserePrimeiro(int valor) {
+        No no1 = new No(valor);
+        no1.setProximo(primeiro);
+        primeiro = no1;
+
+    }
+
+    // buscar valor:
+
+    public String buscar(int valor){
+
+        int index = valor;
+        No cursor = primeiro;
+        while (cursor!= null){
+            if (cursor.getInfo()== valor) {
+                return "Valor encontrado no nó: " + index;
+            }
+            index ++;
+            cursor=cursor.getProximo();
+        }
+        return"O valor não foi encontrado. Ele execultou " + index + " passos ";
+    }
+
+    // Mostrar Lista:
+    public void mostrar() {
+        if (estaVazia()) {
+            System.out.println("Lista Vazia, Não há informação para mostrar!");
+        } else {
+            No cursor = primeiro;
+            while (cursor != null) {
+                System.out.println(cursor.getInfo());
+                cursor = cursor.getProximo();
+            }
+
+        }
+    }
+
+    // esta vazia ;
+
+    public void insereUltimo(int valor) {
+        if (estaVazia()) {
+            inserePrimeiro(valor);
+        } else {
+            No cursor = primeiro;
+            while (cursor.getProximo() != null) {
+                cursor = cursor.getProximo();
+            }
+            No no1 = new No(valor);
+            cursor.setProximo(no1);
+
+
+        }
+
+
+    }
+
+    // remover
+
+    public No removePrimeiro(){
+
+        if (estaVazia()) {
+            System.out.println("Esta vazia.");
+            return null;
+        }else{ No cursor = primeiro;
+            primeiro =primeiro.getProximo();
+            return cursor;
+        }
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
