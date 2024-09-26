@@ -1,0 +1,20 @@
+package oii;
+
+public class Main {
+    public static void main(String[] args) {
+
+       Lista lista = new Lista();
+       System.out.println(lista.estaVazia());
+       lista.inserePrimeiro(10);
+       lista.inserePrimeiro(22);
+       lista.insereUltimo(33);
+       lista.insereUltimo(44);
+
+
+       lista.mostrar();
+        System.out.println(lista.buscar(22));
+        System.out.println("O numero: " + lista.removePrimeiro().getInfo() + " foi removido.");
+
+
+    }
+}
