@@ -1,0 +1,102 @@
+body{
+
+    display:grid;
+    background-color: aliceblue;
+
+}
+
+
+.titulo1{
+    text-align: center;
+
+}
+
+.titulo2{
+   text-align: center;
+
+}
+
+.tudo{ 
+    
+justify-content: center;
+display:flex;
+}
+
+.bloco{
+    box-shadow: 0px 0px 10px 1px;
+    background: rgb(218, 217, 217);
+    border-radius: 10px ;
+    margin: 25px;
+    width:255px;
+}
+
+.tipos_planos{
+    text-align: center;
+    color:antiquewhite;
+    border-top-right-radius:10px ;
+    border-top-left-radius:10px ;
+    font-size: 20px;
+    padding: 10px;
+    background: rgb(36, 35, 35);
+
+
+}
+
+.valor{
+    color:antiquewhite;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    font-family:Arial;
+    background: rgb(83, 167, 192);
+
+}
+p{
+margin: 0%;
+
+}
+
+h3{
+margin: 0%;
+}
+
+span{
+
+font-size: 15px;
+}
+
+.info{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 8px;
+
+
+}
+
+.botao_tudo{
+    display: flex;
+    margin-bottom: 10px; 
+    margin-top: 15; 
+    
+}
+.botao_comprar{
+    color:antiquewhite;
+    font-size: 16px;
+    background: linear-gradient(rgba(50, 166, 201, 0.998),blue) ;
+    border-radius:5px 0 0 5px;
+    border: none;
+    display: flex;
+    padding:1px 30px;
+    align-items: center;
+    margin-left: 42px ;
+}
+.bloco .carrinho{
+padding: 5%;
+background-color: rgb(13, 13, 78);
+border-radius: 0 5PX 5PX 0;
+display: flex;
+}
+.carrinho img{
+    width: 20x;
+    height: 15px;
+}
