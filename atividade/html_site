@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='pp.css'>
+</head>
+<body>
+    
+
+          <div class="titulo1">
+            <h1>Planos Disponíveis</h1>
+          </div>
+          <div class="titulo2">
+            <h2>Escolha o mais ideal para sua hospedagem</h2>
+          </div>
+
+
+          
+  <div class="tudo">      
+
+    <!--Primeior plano-->
+    <div class="bloco">
+
+            <div class="tipos_planos"> 
+             <h3>Básica</h3>
+            </div>
+
+              <div class="valor">
+                R$26,90<span>/mês</span>
+                
+              </div>
+
+              <div class="info"> 
+                <p>memória</p>
+                <P>256 MB</P>
+              </div>
+        
+             <ul>
+              <li>Trasnferências ilimitadas</li>
+              <li>10GB de espaço</li>
+              <li>10 contas de e-mail</li>
+              <li>Construtor de sites</li>
+              <li>Hospedar 1 site</li>
+            
+             </ul>
+        
+             <div class="botao_tudo">
+              <button class="botao_comprar"><strong>Comprar</strong></button>
+              <Button2 class="carrinho"><img class="carro" src="carro.png"></Button2> 
+            </div>
+
+            
+           
+    </div>
+          
+
+
+    <!-- segundo plano -->
+
+    <div class="bloco">
+
+        <div class="tipos_planos"> 
+         <h3>Profissional</h3>
+        </div>
+
+          <div class="valor">
+            R$39,90<span>/mês</span>
+          
+          </div>  
+
+          <div class="info"> 
+            <p>memória</p>
+            <P>512 MB</P>
+          </div>
+        
+    
+         <ul>
+          <li>Trasnferências ilimitadas</li>
+          <li>20GB de espaço</li>
+          <li>25 contas de e-mail</li>
+          <li>Construtor de sites</li>
+          <li>Hospedar 2 site</li>
+        
+         </ul>
+    
+         <div class="botao_tudo">
+          <button class="botao_comprar"><strong>Comprar</strong></button>
+          <Button2 class="carrinho"><img class="carro" src="carro.png"></Button2> 
+        </div>
+</div>
+
+        
+    <!-- terceiro plano  -->
+
+<div class="bloco">
+
+    <div class="tipos_planos"> 
+     <h3>Plus</h3>
+    </div>
+
+      <div class="valor">
+        R$79,90<span>/mês</span>
+        
+      </div>    
+     
+    <div class="info"> 
+            <p>memória</p>
+            <P>768 MB</P>
+          </div>
+
+     <ul>
+      <li>Trasnferências ilimitadas</li>
+      <li>30GB de espaço</li>
+      <li>50 contas de e-mail</li>
+      <li>Construtor de sites</li>
+      <li>Hospedar 5 site</li>
+    
+     </ul>
+
+     <div class="botao_tudo">
+      <button class="botao_comprar"><strong>Comprar</strong></button>
+      <Button2 class="carrinho"><img class="carro" src="carro.png"></Button2> 
+    </div>
+    
+  </div>
+
+
+</div> 
+</body>
+</html>
