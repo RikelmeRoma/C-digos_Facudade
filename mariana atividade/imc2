@@ -1,0 +1,21 @@
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        CalculadoraIMC calculadora = new CalculadoraIMC();
+        
+        System.out.print("Digite o peso (em kg): ");
+        double peso = scanner.nextDouble();
+        calculadora.setPeso(peso);
+        
+        System.out.print("Digite a altura (em metros): ");
+        double altura = scanner.nextDouble();
+        calculadora.setAltura(altura);
+        
+        calculadora.calcularIMC();
+        
+        System.out.printf("O IMC é: %.2f\n", calculadora.getIMC());
+        System.out.println("Classificação: " + calculadora.classificarIMC());
+
+        scanner.close();
+    }
+}
