@@ -1,0 +1,56 @@
+package Mariana_atv2;
+
+class OperacaoAritmetica {
+    private int num1;
+    private int num2;
+    private char operacao;
+ 
+    public OperacaoAritmetica(int num1, int num2, char operacao) {
+        this.num1 = num1;
+        this.num2 = num2;
+        this.operacao = operacao;
+    }
+
+    public int getNum1() {
+        return num1;
+    }
+
+    public void setNum1(int num1) {
+        this.num1 = num1;
+    }
+
+    public int getNum2() {
+        return num2;
+    }
+
+    public void setNum2(int num2) {
+        this.num2 = num2;
+    }
+
+    public char getOperacao() {
+        return operacao;
+    }
+
+    public void setOperacao(char operacao) {
+        this.operacao = operacao;
+    }
+
+    public String calcular() {
+        switch (operacao) {
+            case '+':
+                return "Resultado: " + (num1 + num2);
+            case '-':
+                return "Resultado: " + (num1 - num2);
+            case '*':
+                return "Resultado: " + (num1 * num2);
+            case '/':
+                if (num2 != 0) {
+                    return "Resultado: " + ((double) num1 / num2);
+                } else {
+                    return "Erro: Divisão por zero.";
+                }
+            default:
+                return "Operação inválida.";
+        }
+    }
+}
