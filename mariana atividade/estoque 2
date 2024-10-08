@@ -1,0 +1,79 @@
+public void adicionarEstoque(int quantidade) {
+        if (quantidade > 0) {
+            this.quantidadeEstoque += quantidade;
+            System.out.println("Adicionados " + quantidade + " itens ao estoque.");
+        } else {
+            System.out.println("Quantidade inválida. A quantidade a ser adicionada deve ser maior que 0.");
+        }
+    }
+
+    public void removerEstoque(int quantidade) {
+        if (quantidade > 0 && quantidade <= quantidadeEstoque) {
+            this.quantidadeEstoque -= quantidade;
+            System.out.println("Removidos " + quantidade + " itens do estoque.");
+        } else if (quantidade > quantidadeEstoque) {
+            System.out.println("Erro: A quantidade a ser removida é maior do que a disponível no estoque.");
+        } else {
+            System.out.println("Quantidade inválida. A quantidade a ser removida deve ser maior que 0.");
+        }
+    }
+
+    public void exibirInformacoes() {
+        System.out.println("Produto: " + nome);
+        System.out.println("Quantidade em estoque: " + quantidadeEstoque);
+    }
+}
+
+public class SistemaDeVendas {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Digite o nome do produto: ");
+        String nomeProduto = scanner.nextLine();
+        
+        System.out.print("Digite a quantidade inicial em estoque: ");
+        int quantidadeInicial = scanner.nextInt();
+        
+        Produto produto = new Produto(nomeProduto, quantidadeInicial);
+
+        boolean continuar = true;
+        
+        while (continuar) {
+            System.out.println("\nEscolha uma opção:");
+            System.out.println("1. Adicionar ao estoque");
+            System.out.println("2. Remover do estoque");
+            System.out.println("3. Exibir informações do produto");
+            System.out.println("4. Sair");
+            
+            int opcao = scanner.nextInt();
+            
+            switch (opcao) {
+                case 1:
+                    System.out.print("Digite a quantidade a adicionar ao estoque: ");
+                    int quantidadeAdicionar = scanner.nextInt();
+                    produto.adicionarEstoque(quantidadeAdicionar);
+                    break;
+                
+                case 2:
+                    System.out.print("Digite a quantidade a remover do estoque: ");
+                    int quantidadeRemover = scanner.nextInt();
+                    produto.removerEstoque(quantidadeRemover);
+                    break;
+                
+                case 3:
+                    produto.exibirInformacoes();
+                    break;
+                
+                case 4:
+                    continuar = false;
+                    System.out.println("Saindo do sistema.");
+                    break;
+                
+                default:
+                    System.out.println("Opção inválida! Escolha novamente.");
+            }
+        }
+
+        scanner.close();
+    }
+}
